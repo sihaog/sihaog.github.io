@@ -13,7 +13,12 @@
       <pubDate>Thu, 02 Mar 2023 20:41:10 +0800</pubDate>
       
       <guid>https://sihaog.github.io/posts/how-to-use-github/</guid>
-      <description>What is GitHub? Why GitHub? Basics Advanced usage </description>
+      <description>What is GitHub? One word: a code hosting platform allowing version control and collaboration.
+GitHub vs Git Git is local. Github is remote.
+Basics git init creates a new Git repository.
+git add adds a local change to the staging area, which is not synced until git commit
+git commit captures a snapshot of the staged changes – just like take a photo of the staged repository.
+git push uploads the commited respository to the remote repository.</description>
     </item>
     
   </channel>
