@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SihaoPedia ʕ•ᴥ•ʔ</title>
-    <link>https://sihaog.github.io/</link>
-    <description>Recent content on SihaoPedia ʕ•ᴥ•ʔ</description>
+    <title>Blogs on SihaoPedia ʕ•ᴥ•ʔ</title>
+    <link>https://sihaog.github.io/blog/</link>
+    <description>Recent content in Blogs on SihaoPedia ʕ•ᴥ•ʔ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Sihao Gao.</copyright>
-    <lastBuildDate>Sat, 11 Mar 2023 15:22:01 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Mar 2023 15:22:01 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to use GitHub</title>
       <link>https://sihaog.github.io/how-to-use-github/</link>
