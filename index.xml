@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Sihao Gao.</copyright>
-    <lastBuildDate>Sat, 11 Mar 2023 15:22:01 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Apr 2023 22:48:11 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Machine Learning</title>
+      <link>https://sihaog.github.io/introduction-to-machine-learning/</link>
+      <pubDate>Mon, 03 Apr 2023 22:48:11 +0800</pubDate>
+      
+      <guid>https://sihaog.github.io/introduction-to-machine-learning/</guid>
+      <description>Since the emergence of AlphaGo, AlphaFold2, and ChatGPT etc., artificial intelligence technologies (including machine learning) have revolutionalized today&amp;rsquo;s paradigm of scientific research. However, little is known about the principles of the tech itself by people outside of CS areas. This blog is to briefly introduce these concepts.
+Before diving into the fancy/mysterious words, we must first understand what learning is in human beings.
+What is learning in humans? Gain of knowledge from experience.</description>
+    </item>
+    
     <item>
       <title>How to use GitHub</title>
       <link>https://sihaog.github.io/how-to-use-github/</link>
