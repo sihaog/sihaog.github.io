@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Sihao Gao.</copyright>
-    <lastBuildDate>Mon, 03 Apr 2023 22:48:11 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jul 2023 14:53:59 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Json Introduction</title>
+      <link>https://sihaog.github.io/json-introduction/</link>
+      <pubDate>Wed, 26 Jul 2023 14:53:59 +0800</pubDate>
+      
+      <guid>https://sihaog.github.io/json-introduction/</guid>
+      <description>This is a page about »Json Intro«.</description>
+    </item>
+    
     <item>
       <title>Introduction to Machine Learning</title>
       <link>https://sihaog.github.io/introduction-to-machine-learning/</link>
