@@ -7,15 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Sihao Gao.</copyright>
-    <lastBuildDate>Wed, 26 Jul 2023 16:27:25 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jul 2023 22:45:54 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Interesting Green Exit Sign</title>
-      <link>https://sihaog.github.io/interesting-green-exit-sign/</link>
-      <pubDate>Wed, 26 Jul 2023 16:27:25 +0800</pubDate>
+      <title>Multiply your time</title>
+      <link>https://sihaog.github.io/multiply-your-time/</link>
+      <pubDate>Wed, 26 Jul 2023 22:45:54 +0800</pubDate>
       
-      <guid>https://sihaog.github.io/interesting-green-exit-sign/</guid>
-      <description>I&amp;rsquo;ve just noticed that the exit logo in Beijing Subway and Hong Kong Metro are the same.
-Exit sign in Hong Kong MTR: Exit sign in Beijing Subway: High Resolution MTR Sung </description>
+      <guid>https://sihaog.github.io/multiply-your-time/</guid>
+      <description>I just watched an interesting TED Talk on &amp;ldquo;How to Multiply Your Time&amp;rdquo; because I&amp;rsquo;ve been struggling with time management and procrastination these days.
+Important idea came from this video:
+Significance Calculation Multiply your time means do significance calculation. Time management is not a logical thing to do, but an emotional thing to deal with.
+You MULTIPLY your time by giving yourself the EMOTIONAL PERMISSION to spend time on things TODAY that will give you more time TOMORROW.</description>
     </item>
     
     <item>
@@ -27,6 +29,16 @@ Exit sign in Hong Kong MTR: Exit sign in Beijing Subway: High Resolution MTR Sun
       <description>JSON stands for JavaScript Object Notation
 a file format for storage of data starts with bracket {
 ends with bracket }</description>
+    </item>
+    
+    <item>
+      <title>Interesting Green Exit Sign</title>
+      <link>https://sihaog.github.io/interesting-green-exit-sign/</link>
+      <pubDate>Sun, 23 Jul 2023 16:27:25 +0800</pubDate>
+      
+      <guid>https://sihaog.github.io/interesting-green-exit-sign/</guid>
+      <description>I&amp;rsquo;ve just noticed that the exit logo in Beijing Subway and Hong Kong Metro are the same.
+Exit sign in Hong Kong MTR: Exit sign in Beijing Subway: High Resolution MTR Sung </description>
     </item>
     
     <item>
