@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>json on SihaoPedia ʕ•ᴥ•ʔ</title>
+    <link>https://sihaog.github.io/blog/json/</link>
+    <description>Recent content in json on SihaoPedia ʕ•ᴥ•ʔ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2023, Sihao Gao.</copyright>
+    <lastBuildDate>Wed, 26 Jul 2023 14:53:59 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/blog/json/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JSON Introduction</title>
+      <link>https://sihaog.github.io/json-introduction/</link>
+      <pubDate>Wed, 26 Jul 2023 14:53:59 +0800</pubDate>
+      
+      <guid>https://sihaog.github.io/json-introduction/</guid>
+      <description>JSON stands for JavaScript Object Notation
+a file format for storage of data starts with bracket {
+ends with bracket }</description>
+    </item>
+    
+  </channel>
+</rss>
