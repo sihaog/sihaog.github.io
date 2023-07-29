@@ -15,7 +15,7 @@
       
       <guid>https://sihaog.github.io/multiply-your-time/</guid>
       <description>I just watched an interesting TED Talk on &amp;ldquo;How to Multiply Your Time&amp;rdquo; because I&amp;rsquo;ve been struggling with time management and procrastination these days.
-Important idea came from this video:
+Important ideas came from this video:
 Significance Calculation Multiply your time means do significance calculation. Time management is not a logical thing to do, but an emotional thing to deal with.
 You MULTIPLY your time by giving yourself the EMOTIONAL PERMISSION to spend time on things TODAY that will give you more time TOMORROW.</description>
     </item>
@@ -27,8 +27,9 @@ You MULTIPLY your time by giving yourself the EMOTIONAL PERMISSION to spend time
       
       <guid>https://sihaog.github.io/json-introduction/</guid>
       <description>JSON stands for JavaScript Object Notation
-a file format for storage of data starts with bracket {
-ends with bracket }</description>
+a file format for data storage and data exchange JSON stores two types of data An object An Array of values Object An object starts with left curly brace { and ends with a right curly brace }.
+Inside of an object, the dictionary is formed by pairs of property names and values.
+Each property is separated from each other by a comma ,.</description>
     </item>
     
     <item>
