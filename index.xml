@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Sihao Gao.</copyright>
-    <lastBuildDate>Wed, 26 Jul 2023 22:45:54 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Aug 2023 23:26:48 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is Epidemiology?</title>
+      <link>https://sihaog.github.io/what-is-epidemiology/</link>
+      <pubDate>Mon, 07 Aug 2023 23:26:48 +0800</pubDate>
+      
+      <guid>https://sihaog.github.io/what-is-epidemiology/</guid>
+      <description>Epidemiology has been defined as “the study of the distribution and determinants of disease frequency”.
+As definition implies, the study of epidemiology contains two major components:
+Description of data Causal analysis Descriptive epidemiology The first part of Epidemiology is to study the distribution of disease, or more simply put, is to describe disease data.
+Distribution = describing the pattern of an illness in terms of person, place, and time.
+Person: Who has disease (Demographic characteristics: age, sex, ethnicity, etc) Place: Is this disease equally spatially distributed?</description>
+    </item>
+    
     <item>
       <title>Multiply your time</title>
       <link>https://sihaog.github.io/multiply-your-time/</link>
