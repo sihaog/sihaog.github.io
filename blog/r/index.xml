@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on SihaoPedia ʕ•ᴥ•ʔ</title>
+    <link>https://sihaog.github.io/blog/r/</link>
+    <description>Recent content in R on SihaoPedia ʕ•ᴥ•ʔ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2023, Sihao Gao.</copyright>
+    <lastBuildDate>Tue, 23 Apr 2024 19:24:11 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/blog/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Migrate R Packages to an Offline Server</title>
+      <link>https://sihaog.github.io/how-to-migrate-r-packages-to-an-offline-server/</link>
+      <pubDate>Tue, 23 Apr 2024 19:24:11 +0800</pubDate>
+      
+      <guid>https://sihaog.github.io/how-to-migrate-r-packages-to-an-offline-server/</guid>
+      <description>I am recently conducting R analysis in a server connected to the database within the firewall, which means the computer has no access to the Internet.
+The Major problem with R offline analysis is that packages cannot be directly installed from CRAN.
+This article will illustrate how to migrate R packages from a computer with Internet access (Computer Online) to the offline server (Computer Offline).
+Computer Online library(tools) getDependencies &amp;lt;- function(packs){ dependencyNames &amp;lt;- unlist( tools::package_dependencies(packages = packs, db = available.</description>
+    </item>
+    
+  </channel>
+</rss>

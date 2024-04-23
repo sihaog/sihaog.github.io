@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Sihao Gao.</copyright>
-    <lastBuildDate>Mon, 07 Aug 2023 23:26:48 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Apr 2024 19:24:11 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Migrate R Packages to an Offline Server</title>
+      <link>https://sihaog.github.io/how-to-migrate-r-packages-to-an-offline-server/</link>
+      <pubDate>Tue, 23 Apr 2024 19:24:11 +0800</pubDate>
+      
+      <guid>https://sihaog.github.io/how-to-migrate-r-packages-to-an-offline-server/</guid>
+      <description>I am recently conducting R analysis in a server connected to the database within the firewall, which means the computer has no access to the Internet.
+The Major problem with R offline analysis is that packages cannot be directly installed from CRAN.
+This article will illustrate how to migrate R packages from a computer with Internet access (Computer Online) to the offline server (Computer Offline).
+Computer Online library(tools) getDependencies &amp;lt;- function(packs){ dependencyNames &amp;lt;- unlist( tools::package_dependencies(packages = packs, db = available.</description>
+    </item>
+    
     <item>
       <title>What is Epidemiology?</title>
       <link>https://sihaog.github.io/what-is-epidemiology/</link>
