@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>json on SihaoPedia ʕ•ᴥ•ʔ</title>
+    <title>Json on SihaoPedia ʕ•ᴥ•ʔ</title>
     <link>https://sihaog.github.io/blog/json/</link>
-    <description>Recent content in json on SihaoPedia ʕ•ᴥ•ʔ</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Json on SihaoPedia ʕ•ᴥ•ʔ</description>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Sihao Gao.</copyright>
-    <lastBuildDate>Wed, 26 Jul 2023 14:53:59 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/blog/json/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jul 2023 14:53:59 +0800</lastBuildDate>
+    <atom:link href="https://sihaog.github.io/blog/json/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JSON Introduction</title>
       <link>https://sihaog.github.io/json-introduction/</link>
       <pubDate>Wed, 26 Jul 2023 14:53:59 +0800</pubDate>
-      
       <guid>https://sihaog.github.io/json-introduction/</guid>
-      <description>JSON stands for JavaScript Object Notation
-a file format for data storage and data exchange JSON stores two types of data An object An Array of values Object An object starts with left curly brace { and ends with a right curly brace }.
-Inside of an object, the dictionary is formed by pairs of property names and values.
-Each property is separated from each other by a comma ,.</description>
+      <description>&lt;p&gt;JSON stands for &lt;strong&gt;J&lt;/strong&gt;ava&lt;strong&gt;S&lt;/strong&gt;cript &lt;strong&gt;O&lt;/strong&gt;bject &lt;strong&gt;N&lt;/strong&gt;otation&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;a file format for &lt;em&gt;data storage&lt;/em&gt; and &lt;em&gt;data exchange&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;json-stores-two-types-of-data&#34;&gt;JSON stores two types of data&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;An &lt;em&gt;&lt;strong&gt;object&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;An &lt;em&gt;&lt;strong&gt;Array&lt;/strong&gt;&lt;/em&gt; of &lt;em&gt;&lt;strong&gt;values&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h4 id=&#34;object&#34;&gt;Object&lt;/h4&gt;&#xA;&lt;p&gt;An object starts with left curly brace &lt;code&gt;{&lt;/code&gt; and ends with a right curly brace &lt;code&gt;}&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Inside of an object, the dictionary is formed by pairs of &lt;em&gt;&lt;strong&gt;property names&lt;/strong&gt;&lt;/em&gt; and &lt;em&gt;&lt;strong&gt;values&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Each property is separated from each other by a comma &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

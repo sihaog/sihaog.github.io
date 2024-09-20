@@ -4,22 +4,17 @@
     <title>Epidemiology on SihaoPedia ʕ•ᴥ•ʔ</title>
     <link>https://sihaog.github.io/blog/epidemiology/</link>
     <description>Recent content in Epidemiology on SihaoPedia ʕ•ᴥ•ʔ</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Sihao Gao.</copyright>
-    <lastBuildDate>Mon, 07 Aug 2023 23:26:48 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/blog/epidemiology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Aug 2023 23:26:48 +0800</lastBuildDate>
+    <atom:link href="https://sihaog.github.io/blog/epidemiology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is Epidemiology?</title>
       <link>https://sihaog.github.io/what-is-epidemiology/</link>
       <pubDate>Mon, 07 Aug 2023 23:26:48 +0800</pubDate>
-      
       <guid>https://sihaog.github.io/what-is-epidemiology/</guid>
-      <description>Epidemiology has been defined as “the study of the distribution and determinants of disease frequency”.
-As definition implies, the study of epidemiology contains two major components:
-Description of data Causal analysis Descriptive epidemiology The first part of epidemiology is to study the distribution of disease, or simply put, is to describe disease data.
-Distribution = describing the pattern of an illness in terms of person, place, and time.
-Person: Who has disease (demographic characteristics: age, sex, ethnicity, etc) Place: Is this disease equally spatially distributed?</description>
+      <description>&lt;p&gt;Epidemiology has been defined as “the study of the &lt;em&gt;distribution&lt;/em&gt; and &lt;em&gt;determinants&lt;/em&gt; of disease frequency”.&lt;/p&gt;&#xA;&lt;p&gt;As definition implies, the study of epidemiology contains two major components:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Description of data&lt;/li&gt;&#xA;&lt;li&gt;Causal analysis&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;descriptive-epidemiology&#34;&gt;Descriptive epidemiology&lt;/h2&gt;&#xA;&lt;p&gt;The first part of epidemiology is to study the distribution of disease, or simply put, is to &lt;em&gt;describe&lt;/em&gt; disease data.&lt;/p&gt;&#xA;&lt;p&gt;Distribution = describing the pattern of an illness in terms of &lt;em&gt;person&lt;/em&gt;, &lt;em&gt;place&lt;/em&gt;, and &lt;em&gt;time&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

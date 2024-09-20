@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>logo on SihaoPedia ʕ•ᴥ•ʔ</title>
+    <title>Logo on SihaoPedia ʕ•ᴥ•ʔ</title>
     <link>https://sihaog.github.io/blog/logo/</link>
-    <description>Recent content in logo on SihaoPedia ʕ•ᴥ•ʔ</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Logo on SihaoPedia ʕ•ᴥ•ʔ</description>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Sihao Gao.</copyright>
-    <lastBuildDate>Sun, 23 Jul 2023 16:27:25 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/blog/logo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jul 2023 16:27:25 +0800</lastBuildDate>
+    <atom:link href="https://sihaog.github.io/blog/logo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Interesting Green Exit Sign</title>
       <link>https://sihaog.github.io/interesting-green-exit-sign/</link>
       <pubDate>Sun, 23 Jul 2023 16:27:25 +0800</pubDate>
-      
       <guid>https://sihaog.github.io/interesting-green-exit-sign/</guid>
-      <description>I&amp;rsquo;ve just noticed that the exit logo in Beijing Subway and Hong Kong Metro are the same.
-Exit sign in Hong Kong MTR: Exit sign in Beijing Subway: High Resolution MTR Sung </description>
+      <description>&lt;p&gt;I&amp;rsquo;ve just noticed that the exit logo in Beijing Subway and Hong Kong Metro are the same.&lt;/p&gt;&#xA;&lt;h3 id=&#34;exit-sign-in-hong-kong-mtr&#34;&gt;Exit sign in Hong Kong MTR:&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sihaog.github.io/img/HK-exit.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;exit-sign-in-beijing-subway&#34;&gt;Exit sign in Beijing Subway:&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sihaog.github.io/img/BJ-exit.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;high-resolution&#34;&gt;High Resolution&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sihaog.github.io/img/Exit-sign.jpg&#34; alt=&#34;Exit&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;mtr-sung&#34;&gt;MTR Sung&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sihaog.github.io/img/MTR-sung.jpg&#34; alt=&#34;MTR Sung&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

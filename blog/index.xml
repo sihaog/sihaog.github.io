@@ -4,93 +4,59 @@
     <title>Blogs on SihaoPedia ʕ•ᴥ•ʔ</title>
     <link>https://sihaog.github.io/blog/</link>
     <description>Recent content in Blogs on SihaoPedia ʕ•ᴥ•ʔ</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Sihao Gao.</copyright>
-    <lastBuildDate>Tue, 23 Apr 2024 19:24:11 +0800</lastBuildDate><atom:link href="https://sihaog.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Apr 2024 19:24:11 +0800</lastBuildDate>
+    <atom:link href="https://sihaog.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Migrate R Packages to an Offline Server</title>
       <link>https://sihaog.github.io/how-to-migrate-r-packages-to-an-offline-server/</link>
       <pubDate>Tue, 23 Apr 2024 19:24:11 +0800</pubDate>
-      
       <guid>https://sihaog.github.io/how-to-migrate-r-packages-to-an-offline-server/</guid>
-      <description>I am recently conducting R analysis in a server connected to the database within the firewall, which means the computer has no access to the Internet.
-The Major problem with R offline analysis is that packages cannot be directly installed from CRAN.
-This article will illustrate how to migrate R packages from a computer with Internet access (Computer Online) to the offline server (Computer Offline).
-Computer Online library(tools) getDependencies &amp;lt;- function(packs){ dependencyNames &amp;lt;- unlist( tools::package_dependencies(packages = packs, db = available.</description>
+      <description>&lt;p&gt;I am recently conducting R analysis in a server connected to the database within the firewall, which means the computer has no access to the Internet.&lt;/p&gt;&#xA;&lt;p&gt;The Major problem with R offline analysis is that packages cannot be directly installed from CRAN.&lt;/p&gt;&#xA;&lt;p&gt;This article will illustrate how to migrate R packages from a computer with Internet access (Computer &lt;em&gt;&lt;strong&gt;Online&lt;/strong&gt;&lt;/em&gt;) to the offline server (Computer &lt;em&gt;&lt;strong&gt;Offline&lt;/strong&gt;&lt;/em&gt;).&lt;/p&gt;&#xA;&lt;h2 id=&#34;computer-online&#34;&gt;Computer &lt;em&gt;&lt;strong&gt;Online&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-R&#34; data-lang=&#34;R&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;library&lt;/span&gt;(tools)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;getDependencies &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(packs){&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    dependencyNames &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;unlist&lt;/span&gt;(&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        tools&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;package_dependencies&lt;/span&gt;(packages &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; packs, db &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;available.packages&lt;/span&gt;(), &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                    which &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Depends&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Imports&amp;#34;&lt;/span&gt;),&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                                    recursive &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TRUE&lt;/span&gt;))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    packageNames &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;union&lt;/span&gt;(packs, dependencyNames)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    packageNames&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;installed &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;as.data.frame&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;installed.packages&lt;/span&gt;())&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# List all packages. Expand the vector `target_pkgs`if additional packages are needed.&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;target_pkgs &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;(installed&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Package)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;packages &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;getDependencies&lt;/span&gt;(target_pkgs)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Download all packages to file&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pkgInfo &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;download.packages&lt;/span&gt;(pkgs &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; packages, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;./downloads&amp;#39;&lt;/span&gt;, type &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;win.binary&amp;#39;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;write.csv&lt;/span&gt;(file &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pkgFilenames.csv&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;basename&lt;/span&gt;(pkgInfo[, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]), row.names &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FALSE&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
-    
     <item>
       <title>What is Epidemiology?</title>
       <link>https://sihaog.github.io/what-is-epidemiology/</link>
       <pubDate>Mon, 07 Aug 2023 23:26:48 +0800</pubDate>
-      
       <guid>https://sihaog.github.io/what-is-epidemiology/</guid>
-      <description>Epidemiology has been defined as “the study of the distribution and determinants of disease frequency”.
-As definition implies, the study of epidemiology contains two major components:
-Description of data Causal analysis Descriptive epidemiology The first part of epidemiology is to study the distribution of disease, or simply put, is to describe disease data.
-Distribution = describing the pattern of an illness in terms of person, place, and time.
-Person: Who has disease (demographic characteristics: age, sex, ethnicity, etc) Place: Is this disease equally spatially distributed?</description>
+      <description>&lt;p&gt;Epidemiology has been defined as “the study of the &lt;em&gt;distribution&lt;/em&gt; and &lt;em&gt;determinants&lt;/em&gt; of disease frequency”.&lt;/p&gt;&#xA;&lt;p&gt;As definition implies, the study of epidemiology contains two major components:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Description of data&lt;/li&gt;&#xA;&lt;li&gt;Causal analysis&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;descriptive-epidemiology&#34;&gt;Descriptive epidemiology&lt;/h2&gt;&#xA;&lt;p&gt;The first part of epidemiology is to study the distribution of disease, or simply put, is to &lt;em&gt;describe&lt;/em&gt; disease data.&lt;/p&gt;&#xA;&lt;p&gt;Distribution = describing the pattern of an illness in terms of &lt;em&gt;person&lt;/em&gt;, &lt;em&gt;place&lt;/em&gt;, and &lt;em&gt;time&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Multiply your time</title>
       <link>https://sihaog.github.io/multiply-your-time/</link>
       <pubDate>Wed, 26 Jul 2023 22:45:54 +0800</pubDate>
-      
       <guid>https://sihaog.github.io/multiply-your-time/</guid>
-      <description>I just watched an interesting TED Talk on &amp;ldquo;How to Multiply Your Time&amp;rdquo; because I&amp;rsquo;ve been struggling with time management and procrastination these days.
-Important ideas came from this video:
-Significance Calculation Multiply your time means do significance calculation. Time management is not a logical thing to do, but an emotional thing to deal with.
-You MULTIPLY your time by giving yourself the EMOTIONAL PERMISSION to spend time on things TODAY that will give you more time TOMORROW.</description>
+      <description>&lt;p&gt;I just watched an interesting TED Talk on &amp;ldquo;&lt;a href=&#34;https://www.youtube.com/watch?v=y2X7c9TUQJ8&#34;&gt;How to Multiply Your Time&lt;/a&gt;&amp;rdquo; because I&amp;rsquo;ve been struggling with time management and procrastination these days.&lt;/p&gt;&#xA;&lt;p&gt;Important ideas came from this video:&lt;/p&gt;&#xA;&lt;h2 id=&#34;significance-calculation&#34;&gt;Significance Calculation&lt;/h2&gt;&#xA;&lt;p&gt;Multiply your time means do &lt;strong&gt;significance calculation&lt;/strong&gt;. Time management is not a &lt;em&gt;&lt;strong&gt;logical&lt;/strong&gt;&lt;/em&gt; thing to do, but an &lt;em&gt;&lt;strong&gt;emotional&lt;/strong&gt;&lt;/em&gt; thing to deal with.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;You &lt;strong&gt;MULTIPLY&lt;/strong&gt; your time by giving yourself the &lt;strong&gt;EMOTIONAL PERMISSION&lt;/strong&gt; to spend time on things &lt;strong&gt;TODAY&lt;/strong&gt; that will give you more time &lt;strong&gt;TOMORROW&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>JSON Introduction</title>
       <link>https://sihaog.github.io/json-introduction/</link>
       <pubDate>Wed, 26 Jul 2023 14:53:59 +0800</pubDate>
-      
       <guid>https://sihaog.github.io/json-introduction/</guid>
-      <description>JSON stands for JavaScript Object Notation
-a file format for data storage and data exchange JSON stores two types of data An object An Array of values Object An object starts with left curly brace { and ends with a right curly brace }.
-Inside of an object, the dictionary is formed by pairs of property names and values.
-Each property is separated from each other by a comma ,.</description>
+      <description>&lt;p&gt;JSON stands for &lt;strong&gt;J&lt;/strong&gt;ava&lt;strong&gt;S&lt;/strong&gt;cript &lt;strong&gt;O&lt;/strong&gt;bject &lt;strong&gt;N&lt;/strong&gt;otation&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;a file format for &lt;em&gt;data storage&lt;/em&gt; and &lt;em&gt;data exchange&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;json-stores-two-types-of-data&#34;&gt;JSON stores two types of data&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;An &lt;em&gt;&lt;strong&gt;object&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;An &lt;em&gt;&lt;strong&gt;Array&lt;/strong&gt;&lt;/em&gt; of &lt;em&gt;&lt;strong&gt;values&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h4 id=&#34;object&#34;&gt;Object&lt;/h4&gt;&#xA;&lt;p&gt;An object starts with left curly brace &lt;code&gt;{&lt;/code&gt; and ends with a right curly brace &lt;code&gt;}&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Inside of an object, the dictionary is formed by pairs of &lt;em&gt;&lt;strong&gt;property names&lt;/strong&gt;&lt;/em&gt; and &lt;em&gt;&lt;strong&gt;values&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Each property is separated from each other by a comma &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Interesting Green Exit Sign</title>
       <link>https://sihaog.github.io/interesting-green-exit-sign/</link>
       <pubDate>Sun, 23 Jul 2023 16:27:25 +0800</pubDate>
-      
       <guid>https://sihaog.github.io/interesting-green-exit-sign/</guid>
-      <description>I&amp;rsquo;ve just noticed that the exit logo in Beijing Subway and Hong Kong Metro are the same.
-Exit sign in Hong Kong MTR: Exit sign in Beijing Subway: High Resolution MTR Sung </description>
+      <description>&lt;p&gt;I&amp;rsquo;ve just noticed that the exit logo in Beijing Subway and Hong Kong Metro are the same.&lt;/p&gt;&#xA;&lt;h3 id=&#34;exit-sign-in-hong-kong-mtr&#34;&gt;Exit sign in Hong Kong MTR:&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sihaog.github.io/img/HK-exit.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;exit-sign-in-beijing-subway&#34;&gt;Exit sign in Beijing Subway:&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sihaog.github.io/img/BJ-exit.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;high-resolution&#34;&gt;High Resolution&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sihaog.github.io/img/Exit-sign.jpg&#34; alt=&#34;Exit&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;mtr-sung&#34;&gt;MTR Sung&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://sihaog.github.io/img/MTR-sung.jpg&#34; alt=&#34;MTR Sung&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Introduction to Machine Learning</title>
       <link>https://sihaog.github.io/introduction-to-machine-learning/</link>
       <pubDate>Mon, 03 Apr 2023 22:48:11 +0800</pubDate>
-      
       <guid>https://sihaog.github.io/introduction-to-machine-learning/</guid>
-      <description>Since the emergence of AlphaGo, AlphaFold2, and ChatGPT etc., artificial intelligence technologies (including machine learning) have revolutionalized today&amp;rsquo;s paradigm of scientific research. However, little is known about the principles of the tech itself by people outside of CS areas. This blog is to briefly introduce these concepts.
-Before diving into the fancy/mysterious words, we must first understand what learning is in human beings.
-What is learning in humans? Gain of knowledge from experience.</description>
+      <description>&lt;p&gt;Since the emergence of AlphaGo, AlphaFold2, and ChatGPT etc., artificial intelligence technologies (including machine learning) have revolutionalized today&amp;rsquo;s paradigm of scientific research. However, little is known about the principles of the tech itself by people outside of CS areas. This blog is to briefly introduce these concepts.&lt;/p&gt;&#xA;&lt;p&gt;Before diving into the fancy/mysterious words, we must first understand what &lt;strong&gt;learning&lt;/strong&gt; is in human beings.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-learning-in-humans&#34;&gt;What is learning in humans?&lt;/h2&gt;&#xA;&lt;p&gt;Gain of knowledge from experience.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How to use GitHub</title>
       <link>https://sihaog.github.io/how-to-use-github/</link>
       <pubDate>Sat, 11 Mar 2023 15:22:01 +0800</pubDate>
-      
       <guid>https://sihaog.github.io/how-to-use-github/</guid>
-      <description>What is GitHub? One word: a code hosting platform allowing version control and collaboration.
-GitHub vs Git Git is local. Github is remote.
-Basics git init creates a new Git repository.
-git add adds a local change to the staging area, which is not synced until git commit
-git commit captures a snapshot of the staged changes – just like take a photo of the staged repository.
-git push uploads the commited respository to the remote repository.</description>
+      <description>&lt;h2 id=&#34;what-is-github&#34;&gt;What is GitHub?&lt;/h2&gt;&#xA;&lt;p&gt;One word: a code hosting platform allowing &lt;strong&gt;version control&lt;/strong&gt; and collaboration.&lt;/p&gt;&#xA;&lt;h3 id=&#34;github-vs-git&#34;&gt;GitHub vs Git&lt;/h3&gt;&#xA;&lt;p&gt;Git is local. Github is remote.&lt;/p&gt;&#xA;&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;git init&lt;/code&gt; creates a &lt;em&gt;&lt;strong&gt;new&lt;/strong&gt;&lt;/em&gt; Git repository.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;git add&lt;/code&gt; adds a local change to the &lt;em&gt;&lt;strong&gt;staging&lt;/strong&gt;&lt;/em&gt; area, which is not synced until &lt;code&gt;git commit&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;git commit&lt;/code&gt; captures a snapshot of the &lt;em&gt;&lt;strong&gt;staged&lt;/strong&gt;&lt;/em&gt; changes – just like take a photo of the staged repository.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
