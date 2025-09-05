@@ -31,7 +31,8 @@ packages &lt;- getDependencies(target_pkgs)
 # Download all packages to file
 pkgInfo &lt;- download.packages(pkgs = packages, &#39;./downloads&#39;, type = &#39;win.binary&#39;)
 write.csv(file = &#34;pkgFilenames.csv&#34;, basename(pkgInfo[, 2]), row.names = FALSE)
-" />
+Computer Offline
+Make sure that the following softwares are installed." />
 <meta name="keywords" content="R," />
 
 
@@ -41,7 +42,7 @@ write.csv(file = &#34;pkgFilenames.csv&#34;, basename(pkgInfo[, 2]), row.names =
   <meta property="og:description" content="I am recently conducting R analysis in a server connected to the database within the firewall, which means the computer has no access to the Internet.
 The Major problem with R offline analysis is that packages cannot be directly installed from CRAN.
 This article will illustrate how to migrate R packages from a computer with Internet access (Computer Online) to the offline server (Computer Offline).
-Computer Online library(tools) getDependencies &lt;- function(packs){ dependencyNames &lt;- unlist( tools::package_dependencies(packages = packs, db = available.packages(), which = c(&#34;Depends&#34;, &#34;Imports&#34;), recursive = TRUE)) packageNames &lt;- union(packs, dependencyNames) packageNames } installed &lt;- as.data.frame(installed.packages()) # List all packages. Expand the vector `target_pkgs`if additional packages are needed. target_pkgs &lt;- c(installed$Package) packages &lt;- getDependencies(target_pkgs) # Download all packages to file pkgInfo &lt;- download.packages(pkgs = packages, &#39;./downloads&#39;, type = &#39;win.binary&#39;) write.csv(file = &#34;pkgFilenames.csv&#34;, basename(pkgInfo[, 2]), row.names = FALSE) ">
+Computer Online library(tools) getDependencies &lt;- function(packs){ dependencyNames &lt;- unlist( tools::package_dependencies(packages = packs, db = available.packages(), which = c(&#34;Depends&#34;, &#34;Imports&#34;), recursive = TRUE)) packageNames &lt;- union(packs, dependencyNames) packageNames } installed &lt;- as.data.frame(installed.packages()) # List all packages. Expand the vector `target_pkgs`if additional packages are needed. target_pkgs &lt;- c(installed$Package) packages &lt;- getDependencies(target_pkgs) # Download all packages to file pkgInfo &lt;- download.packages(pkgs = packages, &#39;./downloads&#39;, type = &#39;win.binary&#39;) write.csv(file = &#34;pkgFilenames.csv&#34;, basename(pkgInfo[, 2]), row.names = FALSE) Computer Offline Make sure that the following softwares are installed.">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -59,7 +60,7 @@ Computer Online library(tools) getDependencies &lt;- function(packs){ dependency
   <meta name="twitter:description" content="I am recently conducting R analysis in a server connected to the database within the firewall, which means the computer has no access to the Internet.
 The Major problem with R offline analysis is that packages cannot be directly installed from CRAN.
 This article will illustrate how to migrate R packages from a computer with Internet access (Computer Online) to the offline server (Computer Offline).
-Computer Online library(tools) getDependencies &lt;- function(packs){ dependencyNames &lt;- unlist( tools::package_dependencies(packages = packs, db = available.packages(), which = c(&#34;Depends&#34;, &#34;Imports&#34;), recursive = TRUE)) packageNames &lt;- union(packs, dependencyNames) packageNames } installed &lt;- as.data.frame(installed.packages()) # List all packages. Expand the vector `target_pkgs`if additional packages are needed. target_pkgs &lt;- c(installed$Package) packages &lt;- getDependencies(target_pkgs) # Download all packages to file pkgInfo &lt;- download.packages(pkgs = packages, &#39;./downloads&#39;, type = &#39;win.binary&#39;) write.csv(file = &#34;pkgFilenames.csv&#34;, basename(pkgInfo[, 2]), row.names = FALSE) ">
+Computer Online library(tools) getDependencies &lt;- function(packs){ dependencyNames &lt;- unlist( tools::package_dependencies(packages = packs, db = available.packages(), which = c(&#34;Depends&#34;, &#34;Imports&#34;), recursive = TRUE)) packageNames &lt;- union(packs, dependencyNames) packageNames } installed &lt;- as.data.frame(installed.packages()) # List all packages. Expand the vector `target_pkgs`if additional packages are needed. target_pkgs &lt;- c(installed$Package) packages &lt;- getDependencies(target_pkgs) # Download all packages to file pkgInfo &lt;- download.packages(pkgs = packages, &#39;./downloads&#39;, type = &#39;win.binary&#39;) write.csv(file = &#34;pkgFilenames.csv&#34;, basename(pkgInfo[, 2]), row.names = FALSE) Computer Offline Make sure that the following softwares are installed.">
 
 
 
@@ -68,7 +69,7 @@ Computer Online library(tools) getDependencies &lt;- function(packs){ dependency
   <meta itemprop="description" content="I am recently conducting R analysis in a server connected to the database within the firewall, which means the computer has no access to the Internet.
 The Major problem with R offline analysis is that packages cannot be directly installed from CRAN.
 This article will illustrate how to migrate R packages from a computer with Internet access (Computer Online) to the offline server (Computer Offline).
-Computer Online library(tools) getDependencies &lt;- function(packs){ dependencyNames &lt;- unlist( tools::package_dependencies(packages = packs, db = available.packages(), which = c(&#34;Depends&#34;, &#34;Imports&#34;), recursive = TRUE)) packageNames &lt;- union(packs, dependencyNames) packageNames } installed &lt;- as.data.frame(installed.packages()) # List all packages. Expand the vector `target_pkgs`if additional packages are needed. target_pkgs &lt;- c(installed$Package) packages &lt;- getDependencies(target_pkgs) # Download all packages to file pkgInfo &lt;- download.packages(pkgs = packages, &#39;./downloads&#39;, type = &#39;win.binary&#39;) write.csv(file = &#34;pkgFilenames.csv&#34;, basename(pkgInfo[, 2]), row.names = FALSE) ">
+Computer Online library(tools) getDependencies &lt;- function(packs){ dependencyNames &lt;- unlist( tools::package_dependencies(packages = packs, db = available.packages(), which = c(&#34;Depends&#34;, &#34;Imports&#34;), recursive = TRUE)) packageNames &lt;- union(packs, dependencyNames) packageNames } installed &lt;- as.data.frame(installed.packages()) # List all packages. Expand the vector `target_pkgs`if additional packages are needed. target_pkgs &lt;- c(installed$Package) packages &lt;- getDependencies(target_pkgs) # Download all packages to file pkgInfo &lt;- download.packages(pkgs = packages, &#39;./downloads&#39;, type = &#39;win.binary&#39;) write.csv(file = &#34;pkgFilenames.csv&#34;, basename(pkgInfo[, 2]), row.names = FALSE) Computer Offline Make sure that the following softwares are installed.">
   <meta itemprop="datePublished" content="2024-04-23T19:24:11+08:00">
   <meta itemprop="dateModified" content="2024-04-23T19:24:11+08:00">
   <meta itemprop="wordCount" content="245">

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on SihaoPedia ʕ•ᴥ•ʔ</title>
+    <link>https://sihaog.github.io/blog/git/</link>
+    <description>Recent content in Git on SihaoPedia ʕ•ᴥ•ʔ</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2023, Sihao Gao.</copyright>
+    <lastBuildDate>Sat, 11 Mar 2023 15:22:01 +0800</lastBuildDate>
+    <atom:link href="https://sihaog.github.io/blog/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use GitHub</title>
+      <link>https://sihaog.github.io/how-to-use-github/</link>
+      <pubDate>Sat, 11 Mar 2023 15:22:01 +0800</pubDate>
+      <guid>https://sihaog.github.io/how-to-use-github/</guid>
+      <description>&lt;h2 id=&#34;what-is-github&#34;&gt;What is GitHub?&lt;/h2&gt;&#xA;&lt;p&gt;One word: a code hosting platform allowing &lt;strong&gt;version control&lt;/strong&gt; and collaboration.&lt;/p&gt;&#xA;&lt;h3 id=&#34;github-vs-git&#34;&gt;GitHub vs Git&lt;/h3&gt;&#xA;&lt;p&gt;Git is local. Github is remote.&lt;/p&gt;&#xA;&lt;h2 id=&#34;git-basics&#34;&gt;Git Basics&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;git init&lt;/code&gt; creates a &lt;em&gt;&lt;strong&gt;new&lt;/strong&gt;&lt;/em&gt; Git repository.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;git add&lt;/code&gt; adds a local change to the &lt;em&gt;&lt;strong&gt;staging&lt;/strong&gt;&lt;/em&gt; area, which is not synced until &lt;code&gt;git commit&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;git commit&lt;/code&gt; captures a snapshot of the &lt;em&gt;&lt;strong&gt;staged&lt;/strong&gt;&lt;/em&gt; changes – just like take a photo of the staged repository.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;git push&lt;/code&gt; uploads the &lt;em&gt;&lt;strong&gt;commited&lt;/strong&gt;&lt;/em&gt; respository to the remote repository.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
